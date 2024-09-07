@@ -1,0 +1,27 @@
+# Criando dois sets
+set1 = {1, 2, 3, 4, 5}
+set2 = {4, 5, 6, 7, 8}
+
+# União de sets
+uniao = set1.union(set2)
+print("União:", uniao)
+
+# Interseção de sets
+intersecao = set1.intersection(set2)
+print("Interseção:", intersecao)
+
+# Diferença de sets
+diferenca = set1.difference(set2)
+print("Diferença:", diferenca)
+
+# Diferença simétrica (elementos que estão em um set, mas não em ambos)
+diferenca_simetrica = set1.symmetric_difference(set2)
+print("Diferença Simétrica:", diferenca_simetrica)
+
+# Adicionando um elemento ao set
+set1.add(6)
+print("Set1 após adicionar 6:", set1)
+
+# Removendo um elemento do set
+set1.remove(1)
+print("Set1 após remover 1:", set1)
