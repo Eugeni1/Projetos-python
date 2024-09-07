@@ -1,0 +1,14 @@
+# Solicita as notas das quatro unidades
+nota1 = float(input("Digite a nota da 1ª unidade: "))
+nota2 = float(input("Digite a nota da 2ª unidade: "))
+nota3 = float(input("Digite a nota da 3ª unidade: "))
+nota4 = float(input("Digite a nota da 4ª unidade: "))
+
+# Calcula a média anual
+media = (nota1 + nota2 + nota3 + nota4) / 4
+
+# Exibe a média e verifica se o aluno foi aprovado
+if media >= 7:
+    print(f"Média: {media:.2f}. Aluno aprovado!")
+else:
+    print(f"Média: {media:.2f}. Aluno reprovado!")
