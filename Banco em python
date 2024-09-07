@@ -1,0 +1,46 @@
+class BankAccount:
+    def __init__(self, initial_balance=1000):
+        self.balance = initial_balance
+
+    def deposit(self, amount):
+        self.balance += amount
+        print(f"Depósito de R${amount} realizado com sucesso. Saldo atual: R${self.balance}")
+
+    def withdraw(self, amount):
+        if amount > self.balance:
+            print("Saldo insuficiente!")
+        else:
+            self.balance -= amount
+            print(f"Saque de R${amount} realizado com sucesso. Saldo atual: R${self.balance}")
+
+    def check_balance(self):
+        print(f"Saldo atual: R${self.balance}")
+
+def main():
+    account = BankAccount()
+
+    while True:
+        print("\nOpções:")
+        print("1. Depositar dinheiro")
+        print("2. Sacar dinheiro")
+        print("3. Ver saldo")
+        print("4. Sair do banco")
+
+        option = input("Escolha uma opção: ")
+
+        if option == "1":
+            amount = float(input("Digite o valor do depósito: "))
+            account.deposit(amount)
+        elif option == "2":
+            amount = float(input("Digite o valor do saque: "))
+            account.withdraw(amount)
+        elif option == "3":
+            account.check_balance()
+        elif option == "4":
+            print("Saindo do banco...")
+            break
+        else:
+            print("Opção inválida. Tente novamente!")
+
+if __name__ == "__main__":
+    main()
