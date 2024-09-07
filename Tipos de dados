@@ -1,0 +1,16 @@
+# Tipos Numéricos
+num_inteiro = 10            # int
+num_flutuante = 3.14        # float
+num_complexo = 1 + 2j       # complex
+
+# Sequências
+texto = "Hello"             # str
+lista = [1, 2, 3]           # list
+tupla = (1, 2, 3)           # tuple
+
+# Conjuntos
+conjunto_mutavel = {1, 2, 3}            # set
+conjunto_imutavel = frozenset({1, 2, 3})  # frozenset
+
+# Mapeamento
+dicionario = {"chave1": "valor1", "chave2": "valor2"}  # dict
