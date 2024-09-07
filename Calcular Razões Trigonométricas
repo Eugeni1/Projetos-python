@@ -1,0 +1,26 @@
+import math
+
+# Função para converter graus para radianos
+def graus_para_radianos(graus):
+    return math.radians(graus)
+
+# Função para calcular as razões trigonométricas
+def razoes_trigonometricas(angulo):
+    radianos = graus_para_radianos(angulo)
+    
+    seno = math.sin(radianos)
+    cosseno = math.cos(radianos)
+    tangente = math.tan(radianos)
+    
+    return seno, cosseno, tangente
+
+# Solicitar o ângulo ao usuário
+angulo = float(input("Digite o ângulo em graus: "))
+
+# Calcular as razões trigonométricas
+seno, cosseno, tangente = razoes_trigonometricas(angulo)
+
+# Exibir os resultados
+print(f"Seno: {seno}")
+print(f"Cosseno: {cosseno}")
+print(f"Tangente: {tangente}")
