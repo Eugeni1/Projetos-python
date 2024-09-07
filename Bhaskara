@@ -1,0 +1,20 @@
+import math
+
+def bhaskara(a, b, c):
+    delta = b**2 - 4*a*c
+    
+    if delta < 0:
+        return "As raízes são imaginárias"
+    
+    x1 = (-b + math.sqrt(delta)) / (2*a)
+    x2 = (-b - math.sqrt(delta)) / (2*a)
+    
+    return x1, x2
+
+# Exemplo de uso
+a = float(input("Informe o valor de a: "))
+b = float(input("Informe o valor de b: "))
+c = float(input("Informe o valor de c: "))
+
+resultado = bhaskara(a, b, c)
+print(f"As raízes da equação são: {resultado}")
