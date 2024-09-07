@@ -1,0 +1,36 @@
+# Função para converter grandezas elétricas
+def converter_grandezas(opcao, valor1, valor2):
+    if opcao == 1:  # Calcular tensão (V = I * R)
+        return valor1 * valor2
+    elif opcao == 2:  # Calcular corrente (I = V / R)
+        return valor1 / valor2
+    elif opcao == 3:  # Calcular resistência (R = V / I)
+        return valor1 / valor2
+    else:
+        return "Opção inválida."
+
+# Menu de conversão
+print("Escolha uma conversão:")
+print("1 - Calcular Tensão (V)")
+print("2 - Calcular Corrente (I)")
+print("3 - Calcular Resistência (R)")
+
+opcao = int(input("Digite a opção desejada: "))
+
+if opcao == 1:
+    corrente = float(input("Digite a corrente (I) em amperes: "))
+    resistencia = float(input("Digite a resistência (R) em ohms: "))
+    resultado = converter_grandezas(opcao, corrente, resistencia)
+    print(f"Tensão (V): {resultado} volts")
+elif opcao == 2:
+    tensao = float(input("Digite a tensão (V) em volts: "))
+    resistencia = float(input("Digite a resistência (R) em ohms: "))
+    resultado = converter_grandezas(opcao, tensao, resistencia)
+    print(f"Corrente (I): {resultado} amperes")
+elif opcao == 3:
+    tensao = float(input("Digite a tensão (V) em volts: "))
+    corrente = float(input("Digite a corrente (I) em amperes: "))
+    resultado = converter_grandezas(opcao, tensao, corrente)
+    print(f"Resistência (R): {resultado} ohms")
+else:
+    print("Opção inválida!")
