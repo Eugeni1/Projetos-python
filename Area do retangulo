@@ -1,0 +1,11 @@
+# Função para calcular a área do retângulo
+def calcular_area_retangulo(largura, altura):
+    return largura * altura
+
+# Entradas do usuário
+largura = float(input("Digite a largura do retângulo: "))
+altura = float(input("Digite a altura do retângulo: "))
+
+# Calcula e exibe a área
+area = calcular_area_retangulo(largura, altura)
+print(f"A área do retângulo é: {area}")
