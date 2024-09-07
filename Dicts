@@ -1,0 +1,17 @@
+# Criando um dicionário
+dicionario = {
+    "nome": "Cauã",
+    "idade": 16,
+    "cidade": "São Paulo"
+}
+
+# Acessando valores do dicionário
+print("Nome:", dicionario["nome"])
+print("Idade:", dicionario["idade"])
+print("Cidade:", dicionario["cidade"])
+
+# Adicionando um novo par chave-valor
+dicionario["escola"] = "Ensino Médio"
+
+# Alterando um valor existente
+dicionario["idade"] = 
